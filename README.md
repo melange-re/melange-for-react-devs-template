@@ -28,7 +28,7 @@ To address this, first run `opam update`, then rerun `make init`.
 
 React support is provided by
 [`reason-react`](https://github.com/reasonml/reason-react/). The entry
-point of the sample React app is [`src/Index.re`](src/Index.re).
+point of the sample React app is [`Index.re`](Index.re).
 
 ## Commands
 
