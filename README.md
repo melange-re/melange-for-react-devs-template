@@ -35,9 +35,8 @@ point of the sample React app is [`Index.re`](Index.re).
 You can see all available commands by running `make help` or just `make`. Here
 are a few of the most useful ones:
 
-- `make init`: set up opam local switch and download OCaml, Melange and
+- `make init`: set up opam local switch and download OCaml, Melange, and
 JavaScript dependencies
 - `make install`: install OCaml, Melange, and JavaScript dependencies
-- `make watch`: watch for the filesystem and have Melange rebuild on every
-change
+- `make watch`: watch the filesystem and have Melange rebuild on every change
 - `make serve`: serve the application with a local HTTP server
