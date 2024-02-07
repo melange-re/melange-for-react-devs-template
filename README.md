@@ -6,23 +6,12 @@ with [opam](https://opam.ocaml.org/).
 ## Quick Start
 
 ```shell
-make init
+npm run init
 
 # In separate terminals:
-make watch
-make serve
+npm run watch
+npm run serve
 ```
-
-When running `make init`, you may encounter an error like this:
-
-```
-[ERROR] Could not determine which packages to install for this switch:
-  * Missing dependency:
-    - melange >= 2.0.0
-    no matching version
-```
-
-To address this, first run `opam update`, then rerun `make init`.
 
 ### React
 
@@ -32,11 +21,17 @@ point of the sample React app is [`Index.re`](Index.re).
 
 ## Commands
 
-You can see all available commands by running `make help` or just `make`. Here
+All the build commands are defined in the `scripts` field of `package.json`.
+This is completely optional, and other tools like `make` could be used.
+
+You can see all available commands by running `npm run`. There are explanations
+of each command in the `scriptsComments` field of the `package.json` file. Here
 are a few of the most useful ones:
 
-- `make init`: set up opam local switch and download OCaml, Melange, and
+- `npm run init`: set up opam local switch and download OCaml, Melange and
 JavaScript dependencies
-- `make install`: install OCaml, Melange, and JavaScript dependencies
-- `make watch`: watch the filesystem and have Melange rebuild on every change
-- `make serve`: serve the application with a local HTTP server
+- `npm run install-opam-npm`: install OCaml, Melange, and JavaScript
+  dependencies
+- `npm run watch`: watch the filesystem and have Melange rebuild on every
+change
+- `npm run serve`: serve the application with a local HTTP server
