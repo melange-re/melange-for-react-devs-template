@@ -30,7 +30,7 @@ are a few of the most useful ones:
 
 - `npm run init`: set up opam local switch and download OCaml, Melange and
 JavaScript dependencies
-- `npm run install-opam-npm`: install OCaml, Melange, and JavaScript
+- `npm run install:npm-opam`: install JavaScript, OCaml, and Melange
   dependencies
 - `npm run watch`: watch the filesystem and have Melange rebuild on every
 change
